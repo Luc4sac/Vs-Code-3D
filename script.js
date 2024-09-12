@@ -26,6 +26,10 @@ function mostraPergunta(){
     caixaPergunta.textContent = perguntaAtual.enunciado;
     mostraAlternativa();
 }
-function mostraAlternativa(){
-    for(const alternativa)
+function mostraAlternativas(){
+    for(const alternativa of perguntaAtual.alternativa){
+        const botaoAlternativas = document.createElement("button");
+        botaoAlternativas.textContent = alternativa;
+        caixaAlternativa.arrependChild(botaoAlternativas)
+    }
 }
